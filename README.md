@@ -24,7 +24,7 @@
 - Git Clone The Repo
 
 ```
-git clone https://github.com/dstark5/Openlib.git
+git clone https://github.com/Abror98/BookLovers.git
 ```
 
 - Run the app with Android Studio or VS Code. Or the command line:
