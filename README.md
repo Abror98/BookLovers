@@ -47,7 +47,7 @@ If you'd like to get involved See [CONTRIBUTING.md](./CONTRIBUTING.md) for the g
 
 ## Issues
 
-Please report bugs via the [issue tracker](https://github.com/dstark5/Openlib/issues).
+Please report bugs via the [issue tracker](https://github.com/Abror98/BookLovers.git).
 
 ## Donate
 If you like Openlib, you're welcome to send a donation.
