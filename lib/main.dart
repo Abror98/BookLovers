@@ -82,7 +82,7 @@ class MyApp extends ConsumerWidget {
         );
       },
       debugShowCheckedModeBanner: false,
-      title: 'Openlib',
+      title: 'Book Lovers',
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: ref.watch(themeModeProvider),
