@@ -109,7 +109,6 @@ class _HomePageState extends ConsumerState<HomePage> {
   @override
   Widget build(BuildContext context) {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
-
     final selectedIndex = ref.watch(selectedIndexProvider);
 
     return Scaffold(
