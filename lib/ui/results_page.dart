@@ -21,7 +21,7 @@ class ResultPage extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
-        title: const Text("Openlib"),
+        title: const Text("Book Lovers"),
         titleTextStyle: Theme.of(context).textTheme.displayLarge,
       ),
       body: searchBooks.when(

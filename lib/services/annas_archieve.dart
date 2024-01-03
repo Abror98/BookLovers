@@ -14,12 +14,12 @@ class BookData {
 
   BookData(
       {required this.title,
-      this.author,
-      this.thumbnail,
-      required this.link,
-      required this.md5,
-      this.publisher,
-      this.info});
+        this.author,
+        this.thumbnail,
+        required this.link,
+        required this.md5,
+        this.publisher,
+        this.info});
 }
 
 class BookInfoData extends BookData {
@@ -29,23 +29,23 @@ class BookInfoData extends BookData {
 
   BookInfoData(
       {required String title,
-      required String? author,
-      required String? thumbnail,
-      required String? publisher,
-      required String? info,
-      required String link,
-      required String md5,
-      required this.mirrors,
-      required this.format,
-      required this.description})
+        required String? author,
+        required String? thumbnail,
+        required String? publisher,
+        required String? info,
+        required String link,
+        required String md5,
+        required this.mirrors,
+        required this.format,
+        required this.description})
       : super(
-            title: title,
-            author: author,
-            thumbnail: thumbnail,
-            publisher: publisher,
-            info: info,
-            link: link,
-            md5: md5);
+      title: title,
+      author: author,
+      thumbnail: thumbnail,
+      publisher: publisher,
+      info: info,
+      link: link,
+      md5: md5);
 }
 
 class AnnasArchieve {
@@ -54,8 +54,7 @@ class AnnasArchieve {
   final Dio dio = Dio();
 
   Map<String, dynamic> defaultDioHeaders = {
-    "user-agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
   };
 
   String getMd5(String url) {
@@ -65,7 +64,7 @@ class AnnasArchieve {
 
   List<BookData> _parser(resData, String fileType) {
     var document =
-        parse(resData.toString().replaceAll(RegExp(r"<!--|-->"), ''));
+    parse(resData.toString().replaceAll(RegExp(r"<!--|-->"), ''));
     var books = document.querySelectorAll(
         'a[class="js-vim-focus custom-a flex items-center relative left-[-10px] w-[calc(100%+20px)] px-[10px] outline-offset-[-2px] outline-2 rounded-[3px] hover:bg-black/6.7 focus:outline "]');
 
@@ -77,19 +76,19 @@ class AnnasArchieve {
         'thumbnail': element.querySelector('img')?.attributes['src'],
         'link': element.attributes['href'],
         'author': element
-                .querySelector(
-                    'div[class="max-lg:line-clamp-[2] lg:truncate leading-[1.2] lg:leading-[1.35] max-lg:text-sm italic"]')
-                ?.text ??
+            .querySelector(
+            'div[class="max-lg:line-clamp-[2] lg:truncate leading-[1.2] lg:leading-[1.35] max-lg:text-sm italic"]')
+            ?.text ??
             'unknown',
         'publisher': element
-                .querySelector(
-                    'div[class="truncate leading-[1.2] lg:leading-[1.35] max-lg:text-xs"]')
-                ?.text ??
+            .querySelector(
+            'div[class="truncate leading-[1.2] lg:leading-[1.35] max-lg:text-xs"]')
+            ?.text ??
             "unknown",
         'info': element
-                .querySelector(
-                    'div[class="line-clamp-[2] leading-[1.2] text-[10px] lg:text-xs text-gray-500"]')
-                ?.text ??
+            .querySelector(
+            'div[class="line-clamp-[2] leading-[1.2] text-[10px] lg:text-xs text-gray-500"]')
+            ?.text ??
             ''
       };
 
@@ -97,16 +96,16 @@ class AnnasArchieve {
           (data['link'] != null && data['link'] != '') &&
           (data['info'] != null &&
               ((fileType == "") &&
-                      (data['info']!.contains('pdf') ||
-                          data['info']!.contains('epub') ||
-                          data['info']!.contains('cbr') ||
-                          data['info']!.contains('cbz')) ||
+                  (data['info']!.contains('pdf') ||
+                      data['info']!.contains('epub') ||
+                      data['info']!.contains('cbr') ||
+                      data['info']!.contains('cbz')) ||
                   ((fileType != "") && data['info']!.contains(fileType))))) {
         String link = baseUrl + data['link']!;
         String publisher = ((data['publisher']?.contains('0') == true &&
-                        data['publisher']!.length < 2) ||
-                    data['publisher'] == "") ==
-                true
+            data['publisher']!.length < 2) ||
+            data['publisher'] == "") ==
+            true
             ? "unknown"
             : data['publisher'].toString();
 
@@ -207,13 +206,13 @@ class AnnasArchieve {
       'thumbnail': main?.querySelector('img')?.attributes['src'],
       'link': url,
       'publisher':
-          main?.querySelector('div[class="text-md"]')?.text ?? "unknown",
+      main?.querySelector('div[class="text-md"]')?.text ?? "unknown",
       'info':
-          main?.querySelector('div[class="text-sm text-gray-500"]')?.text ?? '',
+      main?.querySelector('div[class="text-sm text-gray-500"]')?.text ?? '',
       'description': main
-              ?.querySelector(
-                  'div[class="mt-4 line-clamp-[5] js-md5-top-box-description"]')
-              ?.text ??
+          ?.querySelector(
+          'div[class="mt-4 line-clamp-[5] js-md5-top-box-description"]')
+          ?.text ??
           " "
     };
 
@@ -221,11 +220,11 @@ class AnnasArchieve {
         (data['link'] != null && data['link'] != '')) {
       String title = data['title'].toString().characters.skipLast(1).toString();
       String author =
-          data['author'].toString().characters.skipLast(1).toString();
+      data['author'].toString().characters.skipLast(1).toString();
       String publisher = ((data['publisher']?.contains('0') == true &&
-                      data['publisher']!.length < 2) ||
-                  data['publisher'] == "") ==
-              true
+          data['publisher']!.length < 2) ||
+          data['publisher'] == "") ==
+          true
           ? "unknown"
           : data['publisher'].toString();
 
@@ -248,10 +247,10 @@ class AnnasArchieve {
 
   String urlEncoder(
       {required String searchQuery,
-      required String content,
-      required String sort,
-      required String fileType,
-      required bool enableFilters}) {
+        required String content,
+        required String sort,
+        required String fileType,
+        required bool enableFilters}) {
     searchQuery = searchQuery.replaceAll(" ", "+");
     if (enableFilters == false) return '$baseUrl/search?q=$searchQuery';
     if (content == "" && sort == "" && fileType == "") {
@@ -262,10 +261,10 @@ class AnnasArchieve {
 
   Future<List<BookData>> searchBooks(
       {required String searchQuery,
-      String content = "",
-      String sort = "",
-      String fileType = "",
-      bool enableFilters = true}) async {
+        String content = "",
+        String sort = "",
+        String fileType = "",
+        bool enableFilters = true}) async {
     try {
       final String encodedURL = urlEncoder(
           searchQuery: searchQuery,
@@ -290,13 +289,13 @@ class AnnasArchieve {
 
   Future<BookInfoData> bookInfo(
       {required String url,
-      required String userAgent,
-      required String cookie}) async {
+        required String userAgent,
+        required String cookie}) async {
     try {
       final response =
-          await dio.get(url, options: Options(headers: defaultDioHeaders));
+      await dio.get(url, options: Options(headers: defaultDioHeaders));
       BookInfoData? data =
-          await _bookInfoParser(response.data, url, userAgent, cookie);
+      await _bookInfoParser(response.data, url, userAgent, cookie);
       if (data != null) {
         return data;
       } else {

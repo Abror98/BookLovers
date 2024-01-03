@@ -82,7 +82,7 @@ class _EpubViewState extends ConsumerState<EpubViewerWidget> {
       return Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.primary,
-          title: const Text("Openlib"),
+          title: const Text("Book Lovers"),
           titleTextStyle: Theme.of(context).textTheme.displayLarge,
         ),
         body: Center(child: Text(error.toString())),
@@ -91,7 +91,7 @@ class _EpubViewState extends ConsumerState<EpubViewerWidget> {
       return Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.primary,
-          title: const Text("Openlib"),
+          title: const Text("Book Lovers"),
           titleTextStyle: Theme.of(context).textTheme.displayLarge,
         ),
         body: Center(
@@ -152,7 +152,7 @@ class _EpubViewerState extends ConsumerState<EpubViewer> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
-        title: const Text("Openlib"),
+        title: const Text("Book Lovers"),
         titleTextStyle: Theme.of(context).textTheme.displayLarge,
       ),
       endDrawer: Drawer(
