@@ -9,11 +9,918 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aead93b5-189e-452a-8317-38972413a433" name="Changes" comment="" />
+    <list default="true" id="aead93b5-189e-452a-8317-38972413a433" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/images/empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/images/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../assets/images/place.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/app.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/application/application.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/application/services/ad_banner.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/application/services/ad_helper.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/application/services/current_app_theme_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/application/services/services.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/common.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/constants/api.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/constants/constants.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/constants/shared_preferences_key.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/constants/strings.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/constants/utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/data_sources/data_sources.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/data_sources/downloads/downloads_local_data_source.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/data_sources/downloads/downloads_local_data_source_impl.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/data_sources/favorites/favorites_local_data_source.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/data_sources/favorites/favorites_local_data_source_impl.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/database/database.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/database/database_config.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/failures/http_failure.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/local/local_storage.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/remote/adapter/adapter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/remote/adapter/mobile_adapter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/remote/adapter/unsupported.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/remote/adapter/web_adapter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/remote/app_dio.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/repositories/book/book_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/repositories/downloads/downloads_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/repositories/favorites/favorites_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/data/repositories/repositories.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/domain/domain.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/domain/models/category_feed.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/domain/models/models.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/extensions/color_extention.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/extensions/context_extensions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/extensions/extensions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/extensions/theme_extensions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/notifiers/current_app_theme/current_app_theme_notifier.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/notifiers/current_app_theme/current_app_theme_notifier.g.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/notifiers/downloads/downloads_notifier.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/notifiers/downloads/downloads_notifier.g.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/notifiers/favorites/favorites_notifier.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/notifiers/favorites/favorites_notifier.g.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/notifiers/notifiers.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/presentation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/providers/database_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/providers/dio_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/providers/providers.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/providers/shared_preferences_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/theme/theme_config.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/ui.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/animated_page_splitter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/book_card.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/book_item.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/book_list_item.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/description_text.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/empty_view.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/error_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/loading_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/modal_dialogs/custom_alert.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/modal_dialogs/download_alert.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/modal_dialogs/exit_modal_dialog.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/modal_dialogs/modal_dialogs.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/responsive_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/presentation/ui/widgets/widgets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/router/app_router.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/router/app_router.gr.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/utils/riverpod_observer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/common/utils/utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/debug_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/book_details/book_details.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/book_details/data/data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/book_details/data/repositories/book_details_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/book_details/data/repositories/repositories.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/book_details/presentation/notifier/book_details_notifier.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/book_details/presentation/notifier/book_details_notifier.g.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/book_details/presentation/notifier/notifiers.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/book_details/presentation/presentation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/book_details/presentation/ui/screens/book_details_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/book_details/presentation/ui/screens/screens.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/book_details/presentation/ui/ui.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/downloads/downloads.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/downloads/presentation/presentation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/downloads/presentation/ui/screens/download_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/downloads/presentation/ui/screens/screens.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/downloads/presentation/ui/ui.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/data/data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/data/repositories/explore_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/data/repositories/repositories.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/explore.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/presentation/notifiers/genre_feed/genre_feed_notifier.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/presentation/notifiers/genre_feed/genre_feed_notifier.g.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/presentation/notifiers/notifiers.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/presentation/presentation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/presentation/ui/screens/explore_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/presentation/ui/screens/explore_screen_large.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/presentation/ui/screens/explore_screen_small.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/presentation/ui/screens/genre_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/presentation/ui/screens/screens.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/explore/presentation/ui/ui.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/favorites/favourites.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/favorites/presentation/presentation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/favorites/presentation/ui/screens/favorites_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/favorites/presentation/ui/screens/screens.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/favorites/presentation/ui/ui.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/features.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/data/data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/data/repositories/home_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/data/repositories/repositories.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/home.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/presentation/notifiers/home_feed_notifier.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/presentation/notifiers/home_feed_notifier.g.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/presentation/notifiers/notifiers.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/presentation/presentation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/presentation/ui/screens/home_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/presentation/ui/screens/home_screen_large.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/presentation/ui/screens/home_screen_small.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/presentation/ui/screens/screens.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/home/presentation/ui/ui.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/settings/presentation/presentation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/settings/presentation/ui/screens/licenses_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/settings/presentation/ui/screens/screens.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/settings/presentation/ui/screens/settings_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/settings/presentation/ui/screens/settings_screen_large.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/settings/presentation/ui/screens/settings_screen_small.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/settings/presentation/ui/ui.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/settings/settings.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/splash/presentation/presentation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/splash/presentation/ui/screens/screens.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/splash/presentation/ui/screens/splash_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/splash/presentation/ui/ui.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/splash/splash.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/tabs/presentation/notifiers/current_tab_notifier.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/tabs/presentation/notifiers/notifiers.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/tabs/presentation/presentation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/tabs/presentation/ui/screens/screens.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/tabs/presentation/ui/screens/tabs_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/tabs/presentation/ui/screens/tabs_screen_large.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/tabs/presentation/ui/screens/tabs_screen_small.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/tabs/presentation/ui/ui.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/src/features/tabs/tabs.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/example/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/example/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/extensions/data.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/extensions/files.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/extensions/strings.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/extensions/uri.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/io.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/io/file_not_found_exception.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/condition_predicate.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/condition_type.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/exceptions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/file_utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/functions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/href.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/injectable.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/jsonable.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/predicate.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/ref.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/take.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/try.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/lib/utils/uri_template.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/test/extensions/file_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/test/extensions/json_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/test/extensions/url_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/test/util/href_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/commons/test/util/uri_template_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/assets/prod-license.lcpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/example/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/example/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/auth/lcp_passphrase_authentication.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/drm/drm_context.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/drm/drm_error.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/drm/drm_exception.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/drm/lcp_result.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/i18n/lcp_localizations.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/i18n/localizations/messages_all.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/i18n/localizations/messages_de.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/i18n/localizations/messages_en.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/i18n/localizations/messages_es.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/i18n/localizations/messages_fr.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/io/file_util.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/io/uint8list_converter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp_authenticating.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp_client.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp_content_protection.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp_content_protection_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp_decryptor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp_error.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp_exception.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp_license.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp_native.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp_parsing_error.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/lcp_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/container/bytes_license_container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/container/epub_license_container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/container/lcpl_license_container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/container/license_container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/container/web_pub_license_container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/container/zip_license_container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/license.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/license_validation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/license_validation_events.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/license_validation_state_machine.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/license_validation_states.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/components/lcp/content_key.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/components/lcp/encryption.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/components/lcp/rights.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/components/lcp/signature.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/components/lcp/user.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/components/lcp/user_key.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/components/link.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/components/links.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/components/lsd/event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/components/lsd/potential_rights.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/license_document.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/license/model/status_document.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/material_renew_listener.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/native/lcp_client_native.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/native/lcp_native.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/persistence/lcp_database.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/persistence/licenses.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/persistence/transactions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/service/crl_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/service/device_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/service/device_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/service/licenses_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/service/licenses_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/service/network_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/service/passphrases_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/service/passphrases_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/lib/utils/zip_utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/lcp/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/.prettierrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/babel.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/decorator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/flutter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/gestures.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/index-fixed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/index-reflowable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/rect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/selection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/match-quote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/pdf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/placeholder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/fake-pdf-viewer-application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/html-anchoring-fixture.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/html-baselines/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/html-baselines/minimal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/html-baselines/minimal.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/html-baselines/wikipedia-regression-testing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/html-baselines/wikipedia-regression-testing.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/html-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/match-quote-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/pdf-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/placeholder-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/text-range-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/types-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/test/xpath-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/text-range.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/src/vendor/hypothesis/anchoring/xpath.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/_scripts/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/assets/bookmark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/assets/edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/divina/divinaPlayer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/divina/divinaPlayer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/divina/divinaTouchHandling.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/fonts/OpenDyslexic-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/ReadMe.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/ReadiumCSS-after.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/ReadiumCSS-before.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/ReadiumCSS-default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/ReadiumCSS-ebpaj_fonts_patch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/ReadiumCSS-pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/cjk-horizontal/ReadiumCSS-after.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/cjk-horizontal/ReadiumCSS-before.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/cjk-horizontal/ReadiumCSS-default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/cjk-vertical/ReadiumCSS-after.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/cjk-vertical/ReadiumCSS-before.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/cjk-vertical/ReadiumCSS-default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/fonts/AccessibleDfA.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/fonts/LICENSE-AccessibleDfa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/fonts/LICENSE-IaWriterDuospace.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/fonts/iAWriterDuospace-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/rtl/ReadiumCSS-after.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/rtl/ReadiumCSS-before.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/readium-css/rtl/ReadiumCSS-default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/scripts/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/scripts/readium-fixed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/readium/scripts/readium-reflowable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-assets/bookmark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/Gestures.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/ReadiumCSS-after.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/ReadiumCSS-before.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/ReadiumCSS-default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/Recordings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/Reflowable_Viewport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/Storage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/Theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/controllers/bookmarks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/controllers/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/controllers/tts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/model/bookmark_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/model/current_pages_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/model/location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/model/package.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/model/package_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/model/page_open_request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/model/spine_item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/utils/cfi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/utils/cfi_navigation_logic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/utils/rangefix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/utils/tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/xpub.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/xpub_location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/xpub_navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/xpub_navigation_fixed_layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-js/xpub_navigation_reflow_layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-shared-js/globals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-shared-js/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-shared-js/jquery-2.1.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-shared-js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-shared-js/jquery.mobile-1.4.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-shared-js/jquerymobile-swipeupdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-shared-js/polyfill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-shared-js/readium-cfi-js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/assets/xpub-shared-js/underscore-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/cbz.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/epub.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/publication.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/cbz/cbz_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/cbz/widget/cbz_navigator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/bloc/current_spine_item_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/bloc/reader_theme_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/bloc/viewer_settings_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/callbacks/epub_callbacks.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/callbacks/epub_webview_listener.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/callbacks/javascript_channels.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/callbacks/launcher_ui_channels.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/callbacks/model/pagination_info.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/callbacks/model/tap_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/callbacks/navigation_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/callbacks/readium_channels.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/callbacks/webview_listener.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/decoration.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/decoration_change.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/epub_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/extensions/decoration_change.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/html/html_decoration_template.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/js/js_api.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/model/annotation_mark_template.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/model/decoration_style_annotation_mark.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/model/epub_reader_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/model/open_page_request.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/model/selection.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/selection/annotation_popup.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/selection/highlight_popup.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/selection/new_selection_popup.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/selection/selection_listener.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/selection/selection_listener_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/selection/selection_popup.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/selection/simple_selection_listener.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/settings/letter_spacing.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/settings/line_height.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/settings/reader_theme_config.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/settings/readium_theme_values.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/settings/screenshot_config.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/settings/text_align.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/settings/text_margin.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/settings/value_settings.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/settings/viewer_settings.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/settings/word_spacing.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/utils/toc_utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/widget/epub_navigator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/widget/listeners/web_view_horizontal_gesture_recognizer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/widget/webview_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/widget/webview_screen_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/epub/widget/webview_screen_state_stub.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/model/annotation_type.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/model/annotation_type_and_idref_predicate.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/model/annotation_type_predicate.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/model/highlight_style.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/model/in_memory_reader_annotation_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/model/reader_annotation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/model/reader_annotation_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/publication_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/reader_command_processor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/reader_commands.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/reader_context.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/widget/publication_navigator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/widget/spine_item_context.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/lib/src/publication/widget/tap_gesture.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/navigator/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/example/lib/acquisition-feed.atom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/example/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/example/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/lib/mno_opds.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/lib/src/opds/opds1parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/lib/src/opds/opds2parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/test/opds/acquisition-feed.atom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/test/opds/entry.atom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/test/opds/nav-feed.atom" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/opds/test/opds/opds1parser_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/rec_pub_get.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/example/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/example/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/mno_server.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/asset_provider.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/handlers/android/android_request.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/handlers/android/android_response.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/handlers/assets_request_handler.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/handlers/fetcher_request_handler.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/handlers/http/http_request.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/handlers/http/http_response.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/handlers/request.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/handlers/request_handler.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/handlers/response.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/html_injector.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/request_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/resources.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/server_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/server_event.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/lib/src/blocs/server/server_state.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/server/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/example/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/example/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/archive.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/epub.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/fetcher.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/i18n/locale_utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/i18n/localizations/messages_all.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/i18n/localizations/messages_de.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/i18n/localizations/messages_en.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/i18n/localizations/messages_es.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/i18n/localizations/messages_fr.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/i18n/localizations_repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/i18n/reader_shared_localizations.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/mediatype.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/opds.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/publication.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/container/container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/container/file_container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/container/zip_container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/fetcher/archive_fetcher.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/fetcher/bytes_resource.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/fetcher/fetcher.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/fetcher/file_fetcher.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/fetcher/filter.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/fetcher/http_fetcher.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/fetcher/resource.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/fetcher/resource_exception.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/fetcher/routing_fetcher.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/fetcher/transforming_fetcher.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/mediatype/charset.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/mediatype/charsets.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/mediatype/mediatype.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/mediatype/sniffer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/mediatype/sniffer_content.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/mediatype/sniffer_context.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/opds/acquisition.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/opds/availability.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/opds/copies.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/opds/facet.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/opds/feed.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/opds/group.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/opds/holds.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/opds/opds_metadata.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/opds/price.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/asset/file_asset.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/asset/http_asset.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/asset/publication_asset.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/collection.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/content_protection.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/contributor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/drm.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/encryption.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/epub/publication.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/format.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/html/dom_range.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/html/locator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/link.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/link_list_extension.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/link_pagination.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/localized_string.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/locator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/manifest.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/metadata.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/opds/properties.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/opds/publication.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/opening_exception.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/pagination_info_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/presentation/metadata.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/presentation/presentation.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/presentation/properties.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/properties.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/publication.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/publication_collection.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/reading_progression.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/root_file.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/services/content_protection_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/services/cover_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/services/locator_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/services/positions_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/services/route_handler.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/subcollection_map.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/subject.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/publication/user_exception.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/readium_css.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/streams/file_stream.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/streams/raw_stream.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/streams/stream.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/streams/zip_stream.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/util/archive/archive.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/util/archive/exploded_archive.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/util/archive/zip_archive.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/util/image_size.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/zip/file_buffer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/zip/lazy_archive.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/zip/lazy_archive_file.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/zip/lazy_zip_decoder.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/zip/lazy_zip_directory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/zip/lazy_zip_file.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/zip/lazy_zip_file_header.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/zip/zip_header.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/src/zip/zip_package.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/streams.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/xml.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/lib/zip.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/extensions/link_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/fetcher/archive_fetcher_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/fetcher/file_fetcher_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/fixtures.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/opds/acquisition_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/opds/availability_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/opds/copies_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/opds/holds_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/opds/price_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/contributor_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/encryption/encryption_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/encryption/properties_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/epub/epub_layout_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/epub/presentation_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/epub/properties_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/epub/publication_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/html/dom_range_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/html/locator_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/link_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/localized_string_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/locator_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/manifest_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/metadata_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/opds/properties_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/opds/publication_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/presentation/metadata_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/presentation/presentation_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/presentation/properties_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/properties_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/publication_collection_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/publication_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/reading_progression_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/services/cover_service_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/services/locator_service_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/services/positions_service_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/services_builder_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/publication/subject_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/util/archive/archive_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/util/mediatype/media_type_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test/util/mediatype/sniffer_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/fetcher/directory/subdirectory/hello.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/fetcher/directory/subdirectory/text2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/fetcher/directory/text1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/fetcher/epub.epub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/fetcher/text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/audiobook-lcp.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/audiobook-package.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/audiobook-wrongtype.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/audiobook.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/cbz.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/divina-package.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/divina.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/epub.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/html.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/lcpl.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/lpf-index-html.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/lpf.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/opds-authentication.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/opds1-entry.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/opds1-feed.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/opds2-feed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/opds2-publication.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/pdf-lcp.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/pdf.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/png.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/unknown.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/w3c-wpub.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/webpub-package.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/webpub.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/xhtml.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/format/zab.unknown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/publication/services/cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/util/archive/epub.epub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/util/archive/epub/EPUB/cover.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/util/archive/epub/EPUB/css/epub.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/util/archive/epub/EPUB/css/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/util/archive/epub/EPUB/images/cover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/util/archive/epub/EPUB/nav.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/util/archive/epub/EPUB/package.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/util/archive/epub/EPUB/s04.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/util/archive/epub/EPUB/toc.ncx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/util/archive/epub/META-INF/container.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/shared/test_resources/util/archive/epub/mimetype" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/example/lib/links.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/example/lib/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/example/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/pdf.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/publication_parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/cbz/cbz_parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/container/container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/container/publication_container.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/clock_value_parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/constants.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/encryption_parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/epub_deobfuscator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/epub_parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/epub_positions_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/extensions/xml_node.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/metadata_parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/navigation_document_parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/ncx_parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/package_document.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/property_data_type.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/publication_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/epub/readium_css_layout.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/image/image_parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/pdf/pdf_bookmark.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/pdf/pdf_document.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/pdf/pdf_document_factory.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/pdf/pdf_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/pdf/pdf_parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/pdf/pdf_positions_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/readium/lcpdf_positions_service.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/readium/readium_web_pub_parser.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/lib/src/streamer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test/parser/epub/clock_value_parser_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test/parser/epub/encryption_parser_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test/parser/epub/epub_deobfuscator_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test/parser/epub/epub_positions_service_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test/parser/epub/metadata_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test/parser/epub/navigation_document_parser_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test/parser/epub/package_document_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test/parser/epub/property_data_type_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test/parser/image/image_parser_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test/parser/pdf/pdf_positions_service_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/deobfuscation/cut-cut.adb.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/deobfuscation/cut-cut.obf.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/deobfuscation/cut-cut.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/encryption/encryption-lcp-prefixes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/encryption/encryption-lcp-xmlns.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/encryption/encryption-unknown-method.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/navigation/nav-children.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/navigation/nav-complex.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/navigation/nav-empty.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/navigation/nav-section.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/navigation/nav-titles.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/ncx/ncx-children.ncx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/ncx/ncx-complex.ncx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/ncx/ncx-empty.ncx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/ncx/ncx-titles.ncx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/collections-epub2.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/collections-epub3.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/contributors-epub2.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/contributors-epub3.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/cover-epub2.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/cover-epub3.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/cover-mix.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/dates-epub2.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/dates-epub3.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/fallbacks-termination.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/fallbacks.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/identifier-unique.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/links-properties.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/links.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/meta-others.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/meta-termination.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/presentation-metadata.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/progression-default.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/progression-ltr.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/progression-none.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/progression-rtl.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/subjects-complex.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/subjects-multiple.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/subjects-single.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/title-localized.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/title-main-precedence.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/title-multiple-subtitles.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/titles-epub2.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/titles-epub3.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/version-default.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/version-epub2.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/epub/package/version-epub3.opf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/image/futuristic_tales.cbz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/streamer/test_resources/image/futuristic_tales.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/webview/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/webview/.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/webview/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/webview/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/webview/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/webview/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/webview/lib/src/flutter_inappwebview_stub.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/webview/lib/src/headless_in_app_web_view_stub.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/webview/lib/src/main.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/webview/lib/webview.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/components/webview/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/.metadata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/analysis_options.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/appainter_dark_theme.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/appainter_light_theme.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/fonts/times-new-roman bold-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/fonts/times-new-roman-bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/fonts/times-new-roman-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/fonts/times-new-roman.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/app-icon.ai" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/app-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/app-play-feature-image.ai" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/app-play-feature-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/baseline_fast_forward_white_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/baseline_fast_rewind_white_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/baseline_forward_10_white_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/baseline_replay_10_white_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/baseline_search_white_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/cnl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/cover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/home_web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/ic_forward_5_white_24dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/ic_pause_white_24dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/ic_play_arrow_white_24dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/ic_replay_5_white_24dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/ic_skip_left_white_24dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/ic_skip_right_white_24dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_audio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_bookmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_decrease.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_drm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_font_decrease.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_font_increase.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_increse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_justify.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_justify_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_left_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_overflow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_plus_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/icon_settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/assets/images/place.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/iridium_reader_widget.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/util/router.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/book_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/book_toolbar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/epub_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/model/fonts.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/annotations_panel.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/content_panel.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/reader_app_bar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/reader_navigation_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/reader_toolbar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/settings/advanced_settings_panel.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/settings/alignment_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/settings/color_theme.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/settings/font_size_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/settings/general_settings_panel.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/settings/settings_panel.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/settings/settings_row.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/toolbar_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/lib/views/viewers/ui/toolbar_page_number.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../packages/iridium/reader_widget/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/../.flutter-plugins" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Openlib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Openlib.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/delete_confirmation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/empty_mylib.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/error_fixing_bugs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/icons/appIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/library.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/no_internet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/no_results.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/searching.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/undraw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/services/annas_archieve.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/services/database.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/services/download_file.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/services/files.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/services/open_library.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/state/state.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/about_page.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/book_info_page.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/components/book_card_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/components/book_info_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/components/delete_dialog_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/components/error_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/components/file_buttons_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/components/page_title_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/components/snack_bar_widget.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/epub_viewer.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/extensions.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/mybook_page.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/mylibrary_page.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/pdf_viewer.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/results_page.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/search_page.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/settings_page.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/themes.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/trending_page.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/ui/webview_page.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pubspec.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/widget_test.dart" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RZ8RB034GLY]" />
   <component name="ExternalProjectsData">
@@ -26,7 +933,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -35,7 +947,7 @@
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="EXPORT_PRIVATE_KEY" value="false" />
-    <option name="KEY_STORE_PATH" value="$USER_HOME$/keys/book_lovers.jks" />
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../../../keys/keys/book_lovers.jks" />
     <option name="KEY_ALIAS" value="upload" />
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
@@ -49,22 +961,35 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="BundleExportedModule" value="android.app" />
-    <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
-    <property name="ExportApk.BuildVariants" value="release" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="cidr.known.project.marker" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;BundleExportedModule&quot;: &quot;android.app&quot;,
+    &quot;ExportBundle.BundlePathForandroid.app&quot;: &quot;/Users/abror/Documents/Programming/Flutter/Flutter_projects/BookLovers/android/app&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/abror/Documents/Programming/Flutter/Flutter_projects/BookLovers/android&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ExportApk.BuildVariants&quot;: [
+      &quot;release&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="android.app" />
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="android.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -72,6 +997,7 @@
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
       <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -88,6 +1014,8 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Auto>
       <Hybrid>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
@@ -95,14 +1023,21 @@
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Hybrid>
-      <Java />
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
       <Native>
         <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
         <option name="SHOW_STATIC_VARS" value="true" />
         <option name="WORKING_DIR" value="" />
         <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
         <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />

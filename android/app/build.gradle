@@ -35,7 +35,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace "com.kiwi.book_lovers"
-    compileSdkVersion flutter.compileSdkVersion
+    compileSdkVersion 33
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -56,7 +56,7 @@ android {
         applicationId "com.kiwi.book_lovers"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -68,8 +68,6 @@ android {
             keyPassword keystoreProperties['keyPassword']
             storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
             storePassword keystoreProperties['storePassword']
-            v1SigningEnabled true
-            v2SigningEnabled true
         }
     }
 
@@ -79,8 +77,6 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             // replace with "debug" when running on debug version
             signingConfig signingConfigs.release
-            minifyEnabled false
-            shrinkResources false
         }
     }
 }
