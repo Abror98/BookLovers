@@ -234,7 +234,7 @@ class _NewSectionState extends State<_NewSection> {
       itemCount: widget.recent.feed?.entry?.length ?? 0,
       itemBuilder: (BuildContext context, int index) {
         final Entry entry = widget.recent.feed!.entry![index];
-        if (index % 5 == 0 && index != 0) {
+        if (index % 10 == 0 && index != 0) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 5.0, vertical: 5.0),
             child: BannerAdmob(),

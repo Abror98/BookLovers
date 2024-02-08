@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:auto_route/auto_route.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:openlib/src/common/application/services/ad_banner.dart';
 import 'package:openlib/src/common/common.dart';
 import 'package:openlib/src/features/features.dart';
@@ -32,8 +31,6 @@ class BookDetailsScreen extends ConsumerStatefulWidget {
 }
 
 class _BookDetailsScreenState extends ConsumerState<BookDetailsScreen> {
-
-
   @override
   Widget build(BuildContext context) {
     final autoRouteTopRoute = context.watchRouter.currentChild;
@@ -43,41 +40,41 @@ class _BookDetailsScreenState extends ConsumerState<BookDetailsScreen> {
       appBar: AppBar(
         leading: !canPop && autoRouteTopRoute?.name == 'BookDetailsRoute'
             ? CloseButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-              )
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        )
             : null,
         backgroundColor: context.isSmallScreen ? null : Colors.transparent,
         actions: <Widget>[
           ref.watch(favoritesNotifierProvider).maybeWhen(
-                orElse: () => const SizedBox.shrink(),
-                data: (favorites) {
-                  final favorited = favorites.indexWhere(
-                        (element) => element.id!.t == widget.entry.id!.t,
-                      ) !=
-                      -1;
-                  return IconButton(
-                    onPressed: () async {
-                      if (favorited) {
-                        ref
-                            .watch(favoritesNotifierProvider.notifier)
-                            .deleteBook(widget.entry.id!.t ?? '');
-                      } else {
-                        ref
-                            .watch(favoritesNotifierProvider.notifier)
-                            .addBook(widget.entry, widget.entry.id!.t ?? '');
-                      }
-                    },
-                    icon: Icon(
-                      favorited ? Icons.favorite : Feather.heart,
-                      color: favorited
-                          ? Colors.red
-                          : context.theme.iconTheme.color,
-                    ),
-                  );
+            orElse: () => const SizedBox.shrink(),
+            data: (favorites) {
+              final favorited = favorites.indexWhere(
+                    (element) => element.id!.t == widget.entry.id!.t,
+              ) !=
+                  -1;
+              return IconButton(
+                onPressed: () async {
+                  if (favorited) {
+                    ref
+                        .watch(favoritesNotifierProvider.notifier)
+                        .deleteBook(widget.entry.id!.t ?? '');
+                  } else {
+                    ref
+                        .watch(favoritesNotifierProvider.notifier)
+                        .addBook(widget.entry, widget.entry.id!.t ?? '');
+                  }
                 },
-              ),
+                icon: Icon(
+                  favorited ? Icons.favorite : Feather.heart,
+                  color: favorited
+                      ? Colors.red
+                      : context.theme.iconTheme.color,
+                ),
+              );
+            },
+          ),
           IconButton(
             onPressed: () => _share(),
             icon: const Icon(Feather.share),
@@ -93,7 +90,6 @@ class _BookDetailsScreenState extends ConsumerState<BookDetailsScreen> {
             authorTag: widget.authorTag,
             imgTag: widget.imgTag,
             titleTag: widget.titleTag,
-
           ),
           const SizedBox(height: 30.0),
           const _SectionTitle(title: 'Book Description'),
@@ -108,7 +104,7 @@ class _BookDetailsScreenState extends ConsumerState<BookDetailsScreen> {
           const SizedBox(height: 10.0),
           _MoreBooksFromAuthor(
             authorUrl:
-                widget.entry.author!.uri!.t!.replaceAll(r'\&lang=en', ''),
+            widget.entry.author!.uri!.t!.replaceAll(r'\&lang=en', ''),
             entry: widget.entry,
           ),
           const SizedBox(height: 30.0),
@@ -217,7 +213,6 @@ class _CategoryChips extends StatelessWidget {
 
   const _CategoryChips({required this.entry});
 
-
   @override
   Widget build(BuildContext context) {
     if (entry.category == null) {
@@ -257,65 +252,14 @@ class _CategoryChips extends StatelessWidget {
       );
     }
   }
-
 }
 
 class _DownloadButton extends ConsumerWidget {
   final Entry entry;
 
-  _DownloadButton({required this.entry});
+  const _DownloadButton({required this.entry});
 
   String get id => entry.id!.t.toString();
-
-  InterstitialAd? _interstitialAd;
-  int _numInterstitialLoadAttempts = 0;
-  int maxFailedLoadAttempts = 3;
-
-  void _createInterstitialAd(BuildContext context) {
-    InterstitialAd.load(
-      adUnitId: "ca-app-pub-2574794998192961/2129572991",
-      request: AdRequest(),
-      adLoadCallback: InterstitialAdLoadCallback(
-        onAdLoaded: (InterstitialAd ad) {
-          _interstitialAd = ad;
-          _numInterstitialLoadAttempts = 0;
-          _showInterstitialAd();
-        },
-        onAdFailedToLoad: (LoadAdError error) {
-          _numInterstitialLoadAttempts += 1;
-          _interstitialAd = null;
-          if (_numInterstitialLoadAttempts < maxFailedLoadAttempts) {
-            _createInterstitialAd(context);
-          } else {
-            DownloadAlert.show(
-              context: context,
-              url: entry.link![3].href!,
-              name: entry.title!.t ?? '',
-              image: '${entry.link![1].href}',
-              id: entry.id!.t.toString(),
-            );
-          }
-        },
-      ),
-    );
-  }
-
-  void _showInterstitialAd() {
-    if (_interstitialAd == null) {
-      print('Warning: attempt to show interstitial before loaded.');
-      return;
-    }
-    _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
-      onAdDismissedFullScreenContent: (InterstitialAd ad) {
-        ad.dispose();
-
-      },
-    );
-    _interstitialAd!.show();
-    _interstitialAd = null;
-  }
-
-
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -351,29 +295,34 @@ class _DownloadButton extends ConsumerWidget {
   }
 
   Widget _downloadButton(BuildContext context) => TextButton(
-        style: TextButton.styleFrom(
-          padding: EdgeInsets.zero,
-        ),
-        onPressed: () {
-          _createInterstitialAd(context);
-        },
-        child: Text(
-          'Download'.toUpperCase(),
-          style: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.bold,
-            color: context.theme.textTheme.titleLarge?.color ?? Colors.black,
-            decoration: TextDecoration.underline,
-          ),
-        ),
+    style: TextButton.styleFrom(
+      padding: EdgeInsets.zero,
+    ),
+    onPressed: () {
+      DownloadAlert.show(
+        context: context,
+        url: entry.link![3].href!,
+        name: entry.title!.t ?? '',
+        image: '${entry.link![1].href}',
+        id: entry.id!.t.toString(),
       );
-
+    },
+    child: Text(
+      'Download'.toUpperCase(),
+      style: TextStyle(
+        fontSize: 15,
+        fontWeight: FontWeight.bold,
+        color: context.theme.textTheme.titleLarge?.color ?? Colors.black,
+        decoration: TextDecoration.underline,
+      ),
+    ),
+  );
 
   Future<void> openBook(
-    String path,
-    BuildContext context,
-    WidgetRef ref,
-  ) async {
+      String path,
+      BuildContext context,
+      WidgetRef ref,
+      ) async {
     final bookFile = File(path);
     if (bookFile.existsSync()) {
       Navigator.push(
@@ -449,57 +398,57 @@ class _MoreBooksFromAuthorState extends ConsumerState<_MoreBooksFromAuthor> {
   @override
   Widget build(BuildContext context) {
     return ref.watch(bookDetailsNotifierProvider(widget.authorUrl)).maybeWhen(
-          orElse: () => const SizedBox.shrink(),
-          loading: () => const LoadingWidget(),
-          data: (related) {
-            if (related.feed!.entry == null || related.feed!.entry!.isEmpty) {
+      orElse: () => const SizedBox.shrink(),
+      loading: () => const LoadingWidget(),
+      data: (related) {
+        if (related.feed!.entry == null || related.feed!.entry!.isEmpty) {
+          return const Center(
+            child: Padding(
+              padding: EdgeInsets.only(top: 50.0),
+              child: Text(
+                'Empty',
+              ),
+            ),
+          );
+        }
+        final entries = related.feed!.entry!;
+        return ListView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: related.feed!.entry!.length,
+          itemBuilder: (BuildContext context, int index) {
+            final entry = entries[index];
+            final isSingleEntry = entries.length == 1;
+            if (entry.id!.t == widget.entry.id!.t && isSingleEntry) {
               return const Center(
                 child: Padding(
-                  padding: EdgeInsets.only(top: 50.0),
+                  padding: EdgeInsets.only(top: 40.0),
                   child: Text(
-                    'Empty',
+                    "oops, there's no other book from this author available",
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
                 ),
               );
+            } else if (entry.id!.t == widget.entry.id!.t) {
+              return const SizedBox
+                  .shrink(); // Skip rendering the current entry
+            } else {
+              return Padding(
+                padding: const EdgeInsets.symmetric(vertical: 5.0),
+                child: BookListItem(entry: entry),
+              );
             }
-            final entries = related.feed!.entry!;
-            return ListView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              itemCount: related.feed!.entry!.length,
-              itemBuilder: (BuildContext context, int index) {
-                final entry = entries[index];
-                final isSingleEntry = entries.length == 1;
-                if (entry.id!.t == widget.entry.id!.t && isSingleEntry) {
-                  return const Center(
-                    child: Padding(
-                      padding: EdgeInsets.only(top: 40.0),
-                      child: Text(
-                        "oops, there's no other book from this author available",
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  );
-                } else if (entry.id!.t == widget.entry.id!.t) {
-                  return const SizedBox
-                      .shrink(); // Skip rendering the current entry
-                } else {
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 5.0),
-                    child: BookListItem(entry: entry),
-                  );
-                }
-              },
-            );
-          },
-          error: (_, __) {
-            return MyErrorWidget(
-              refreshCallBack: () => _fetch(),
-            );
           },
         );
+      },
+      error: (_, __) {
+        return MyErrorWidget(
+          refreshCallBack: () => _fetch(),
+        );
+      },
+    );
   }
 }

@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:openlib/src/common/common.dart';
 import 'package:openlib/src/features/features.dart';
+import 'package:openlib/src/features/suggetions/presentation/ui/screens/screens.dart';
 
 import '../../features/splash/presentation/ui/screens/splash_screen.dart';
 
@@ -73,8 +74,8 @@ class AppRouter extends _$AppRouter {
               ),
               CustomRoute(
                 transitionsBuilder: (_, __, ___, child) => child,
-                page: LicensesRoute.page,
-                path: 'licenses-nested-tab',
+                page: SuggestionsRoute.page,
+                path: 'suggestion-nested-tab',
               ),
               CustomRoute(
                 transitionsBuilder: (_, __, ___, child) => child,
@@ -106,8 +107,8 @@ class AppRouter extends _$AppRouter {
         path: '/favorites-tab',
       ),
       CupertinoRoute(
-        page: LicensesRoute.page,
-        path: '/licenses-tab',
+        page: SuggestionsRoute.page,
+        path: '/suggestion-tab',
       ),
     ];
   }

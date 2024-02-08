@@ -34,7 +34,7 @@ abstract class _$BookDetailsNotifier
     extends BuildlessAutoDisposeAsyncNotifier<CategoryFeed> {
   late final String url;
 
-  Future<CategoryFeed> build(
+  FutureOr<CategoryFeed> build(
     String url,
   );
 }
@@ -114,7 +114,7 @@ class BookDetailsNotifierProvider extends AutoDisposeAsyncNotifierProviderImpl<
   final String url;
 
   @override
-  Future<CategoryFeed> runNotifierBuild(
+  FutureOr<CategoryFeed> runNotifierBuild(
     covariant BookDetailsNotifier notifier,
   ) {
     return notifier.build(
@@ -173,4 +173,4 @@ class _BookDetailsNotifierProviderElement
   String get url => (origin as BookDetailsNotifierProvider).url;
 }
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

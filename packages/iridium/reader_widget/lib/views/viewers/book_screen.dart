@@ -87,8 +87,18 @@ abstract class BookScreenState<T extends BookScreen,
       initialData: false,
       builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
         if (snapshot.data!) {
-          return WillPopScope(
-            onWillPop: onWillPop,
+          return PopScope(
+            onPopInvoked: (didPop) async {
+              if (didPop) {
+                return;
+              }
+              final navigator = Navigator.of(context);
+              bool value = await onWillPop();
+              if (value) {
+                navigator.pop();
+              }
+            },
+            canPop: false,
             child: Scaffold(
               body: createPublicationNavigator(
                 waitingScreenBuilder: buildWaitingScreen,

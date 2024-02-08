@@ -32,13 +32,11 @@ class _ExploreScreenSmallState extends ConsumerState<ExploreScreenSmall>
         loading: () => const LoadingWidget(),
         data: (feeds) {
           final popular = feeds.popularFeed;
-          return ListView.builder(
+          return ListView.separated(
             itemCount: popular.feed?.link?.length ?? 0,
             itemBuilder: (BuildContext context, int index) {
+
               final Link link = popular.feed!.link![index];
-              if(index != 0 && index % 5 == 0 && index > 10){
-                return  BannerAdmob();
-              }
 
               if (!context.isSmallScreen && index == 0) {
                 return const SizedBox(height: 30.0);
@@ -53,7 +51,14 @@ class _ExploreScreenSmallState extends ConsumerState<ExploreScreenSmall>
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: _SectionBookList(link: link),
               );
-            },
+            }, separatorBuilder: (BuildContext context, int index) {
+            if(index != 0 && index % 10 == 0){
+              return BannerAdmob();
+            }
+            else{
+              return const SizedBox();
+            }
+          },
           );
         },
         error: (_, __) {

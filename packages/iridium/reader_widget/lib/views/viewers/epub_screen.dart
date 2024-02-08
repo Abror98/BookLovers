@@ -233,6 +233,14 @@ class EpubScreenState extends BookScreenState<EpubScreen, EpubController> {
           BlocProvider(create: (context) => _readerThemeBloc),
         ],
         child: Scaffold(
+          // appBar: AppBar(
+          //   leading: IconButton(
+          //     icon: const Icon(Icons.arrow_back),
+          //     onPressed: (){
+          //       Navigator.pop(context);
+          //     },
+          //   ),
+          // ),
             body: Stack(
               children: [
                 super.build(context),

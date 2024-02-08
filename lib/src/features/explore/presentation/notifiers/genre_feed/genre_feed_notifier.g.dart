@@ -29,11 +29,11 @@ class _SystemHash {
   }
 }
 
-abstract class _$GenreFeedNotifier extends BuildlessAutoDisposeAsyncNotifier<
-    ({List<Entry> books, bool loadingMore})> {
+abstract class _$GenreFeedNotifier
+    extends BuildlessAutoDisposeAsyncNotifier<GenreFeedData> {
   late final String url;
 
-  Future<({List<Entry> books, bool loadingMore})> build(
+  FutureOr<GenreFeedData> build(
     String url,
   );
 }
@@ -43,8 +43,7 @@ abstract class _$GenreFeedNotifier extends BuildlessAutoDisposeAsyncNotifier<
 const genreFeedNotifierProvider = GenreFeedNotifierFamily();
 
 /// See also [GenreFeedNotifier].
-class GenreFeedNotifierFamily
-    extends Family<AsyncValue<({List<Entry> books, bool loadingMore})>> {
+class GenreFeedNotifierFamily extends Family<AsyncValue<GenreFeedData>> {
   /// See also [GenreFeedNotifier].
   const GenreFeedNotifierFamily();
 
@@ -83,7 +82,7 @@ class GenreFeedNotifierFamily
 
 /// See also [GenreFeedNotifier].
 class GenreFeedNotifierProvider extends AutoDisposeAsyncNotifierProviderImpl<
-    GenreFeedNotifier, ({List<Entry> books, bool loadingMore})> {
+    GenreFeedNotifier, GenreFeedData> {
   /// See also [GenreFeedNotifier].
   GenreFeedNotifierProvider(
     String url,
@@ -114,7 +113,7 @@ class GenreFeedNotifierProvider extends AutoDisposeAsyncNotifierProviderImpl<
   final String url;
 
   @override
-  Future<({List<Entry> books, bool loadingMore})> runNotifierBuild(
+  FutureOr<GenreFeedData> runNotifierBuild(
     covariant GenreFeedNotifier notifier,
   ) {
     return notifier.build(
@@ -139,8 +138,8 @@ class GenreFeedNotifierProvider extends AutoDisposeAsyncNotifierProviderImpl<
   }
 
   @override
-  AutoDisposeAsyncNotifierProviderElement<GenreFeedNotifier,
-      ({List<Entry> books, bool loadingMore})> createElement() {
+  AutoDisposeAsyncNotifierProviderElement<GenreFeedNotifier, GenreFeedData>
+      createElement() {
     return _GenreFeedNotifierProviderElement(this);
   }
 
@@ -158,19 +157,19 @@ class GenreFeedNotifierProvider extends AutoDisposeAsyncNotifierProviderImpl<
   }
 }
 
-mixin GenreFeedNotifierRef on AutoDisposeAsyncNotifierProviderRef<
-    ({List<Entry> books, bool loadingMore})> {
+mixin GenreFeedNotifierRef
+    on AutoDisposeAsyncNotifierProviderRef<GenreFeedData> {
   /// The parameter `url` of this provider.
   String get url;
 }
 
 class _GenreFeedNotifierProviderElement
     extends AutoDisposeAsyncNotifierProviderElement<GenreFeedNotifier,
-        ({List<Entry> books, bool loadingMore})> with GenreFeedNotifierRef {
+        GenreFeedData> with GenreFeedNotifierRef {
   _GenreFeedNotifierProviderElement(super.provider);
 
   @override
   String get url => (origin as GenreFeedNotifierProvider).url;
 }
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member

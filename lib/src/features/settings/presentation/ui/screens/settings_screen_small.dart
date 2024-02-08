@@ -18,11 +18,11 @@ class _SettingsScreenSmallState extends State<SettingsScreenSmall> {
   void initState() {
     super.initState();
     items = [
-      {
-        'icon': Feather.heart,
-        'title': 'Favorites',
-        'function': () => _pushPage(const FavoritesRoute()),
-      },
+      // {
+      //   'icon': Feather.heart,
+      //   'title': 'Favorites',
+      //   'function': () => _pushPage(const FavoritesRoute()),
+      // },
       {
         'icon': Feather.download,
         'title': 'Downloads',
@@ -37,12 +37,12 @@ class _SettingsScreenSmallState extends State<SettingsScreenSmall> {
         'icon': Feather.info,
         'title': 'About',
         'function': () => showAbout(),
-      }
-      // {
-      //   'icon': Feather.file_text,
-      //   'title': 'Open Source Licenses',
-      //   'function': () => _pushPage(const LicensesRoute()),
-      // },
+      },
+      {
+        'icon': Feather.file_text,
+        'title': 'Suggestions',
+        'function': () => _pushPage(const SuggestionsRoute()),
+      },
     ];
   }
 

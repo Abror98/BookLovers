@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:device_info_plus/device_info_plus.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -55,47 +56,48 @@ class _DownloadAlertState extends ConsumerState<DownloadAlert> {
   String get fileName =>
       widget.name.replaceAll(' ', '_').replaceAll(r"\'", "'");
 
-  Future<void> checkPermissionAndDownload() async {
-    if (kIsWeb || Platform.isMacOS) {
-      createFile();
-      return;
-    }
 
-    final PermissionStatus permission = await Permission.storage.status;
-
-    if (permission != PermissionStatus.granted) {
-      await Permission.storage.request();
-      // access media location needed for android 10/Q
-      await Permission.accessMediaLocation.request();
-      // manage external storage needed for android 11/R
-      await Permission.manageExternalStorage.request();
-      createFile();
-    } else {
-      createFile();
-    }
-  }
+  // Future<void> checkPermissionAndDownload() async {
+  //   if (kIsWeb || Platform.isMacOS) {
+  //     createFile();
+  //     return;
+  //   }
+  //
+  //   final PermissionStatus permission = await Permission.storage.status;
+  //
+  //   if (permission != PermissionStatus.granted) {
+  //     await Permission.storage.request();
+  //     // access media location needed for android 10/Q
+  //     await Permission.accessMediaLocation.request();
+  //     // manage external storage needed for android 11/R
+  //     await Permission.manageExternalStorage.request();
+  //     createFile();
+  //   } else {
+  //     createFile();
+  //   }
+  // }
 
   Future<void> createFile() async {
-    final appDocDir = Platform.isAndroid
-        ? await getExternalStorageDirectory()
-        : await getApplicationDocumentsDirectory();
+    final root = await getApplicationDocumentsDirectory();
 
-    final String dirPath = path.join(appDocDir!.path, appName);
-    if (Platform.isAndroid) {
-      Directory(appDocDir.path.split('Android')[0] + appName).createSync();
-    } else {
-      Directory(dirPath).createSync();
-    }
-    final String filePath = Platform.isAndroid
-        ? path.join(
-            appDocDir.path.split('Android')[0],
-            appName,
-            '$fileName.epub',
-          )
-        : path.join(dirPath, '$fileName.epub');
+    // final String dirPath = path.join(appDocDir.path, appName);
+    // if (Platform.isAndroid) {
+    //   Directory(appDocDir.path.split('Android')[0] + appName).createSync();
+    // } else {
+    //   Directory(dirPath).createSync();
+    // }
+    // final String filePath = Platform.isAndroid
+    //     ? path.join(
+    //         appDocDir.path.split('Android')[0],
+    //         appName,
+    //         '$fileName.epub',
+    //       )
+    //     : path.join(dirPath, '$fileName.epub');
+    var filePath = '${root.path}/$fileName.epub';
     final File file = File(filePath);
+
     if (!await file.exists()) {
-      await file.create();
+      await file.create(recursive: true);
     } else {
       await file.delete();
       await file.create();
@@ -204,5 +206,54 @@ class _DownloadAlertState extends ConsumerState<DownloadAlert> {
         ),
       ),
     );
+  }
+
+  Future<void> checkPermissionAndDownload() async {
+    if (kIsWeb || (!Platform.isAndroid && !Platform.isIOS)) {
+      // Assumes createFile() is implemented elsewhere
+      createFile();
+      return;
+    }
+
+    if (Platform.isAndroid) {
+      await _handleAndroidPermissions();
+    } else {
+      // iOS and other platforms
+      final PermissionStatus permission = await Permission.storage.status;
+      if (permission != PermissionStatus.granted) {
+        await Permission.storage.request();
+      }
+      createFile();
+    }
+  }
+
+  Future<void> _handleAndroidPermissions() async {
+    if (await _checkAndroidVersion(29)) {
+      // For Android 10 (Q) and above, manage external storage permission
+      var manageStorageStatus = await Permission.manageExternalStorage.status;
+      if (!manageStorageStatus.isGranted) {
+        await Permission.manageExternalStorage.request();
+      }
+    } else {
+      // For Android versions below 10 (Q)
+      var storageStatus = await Permission.storage.status;
+      if (!storageStatus.isGranted) {
+        await Permission.storage.request();
+      }
+    }
+
+    // Optionally, request accessMediaLocation permission if your app needs it
+    var accessMediaLocationStatus = await Permission.accessMediaLocation.status;
+    if (!accessMediaLocationStatus.isGranted) {
+      await Permission.accessMediaLocation.request();
+    }
+
+    createFile();
+  }
+
+  Future<bool> _checkAndroidVersion(int targetVersion) async {
+    var androidInfo = await DeviceInfoPlugin().androidInfo;
+    var sdkInt = androidInfo.version.sdkInt;
+    return sdkInt >= targetVersion;
   }
 }
