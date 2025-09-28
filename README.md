@@ -48,16 +48,3 @@ If you'd like to get involved See [CONTRIBUTING.md](./CONTRIBUTING.md) for the g
 ## Issues
 
 Please report bugs via the [issue tracker](https://github.com/Abror98/BookLovers.git).
-
-## Donate
-If you like Openlib, you're welcome to send a donation.
-#### [Donate To Anna’s Archive](https://annas-archive.org/donate?tier=1).
-
-## License
-[![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)  
-
-Openlib is a free software licensed under GPL v3.0 It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY.[GNU General Public License](https://www.gnu.org/licenses/gpl.html) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-## Disclaimer
-
-Openlib does not own or have any affiliation with the books available through the app.All books are the property of their respective owners and are protected by copyright law.Openlib is not responsible for any infringement of copyright or other intellectual property rights that may result from the use of the books available through the app.By using the app, you agree to use the books only for personal, non-commercial purposes and in compliance with all applicable laws and regulations.
